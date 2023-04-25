@@ -1,0 +1,152 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5;
+}
+
+.general {
+    background-color: rgb(231, 241, 250);
+    margin: 64px auto 50px;
+    width: 1440px;
+    height: 1024px;
+    display: flex;
+    /* align-items: start */
+}
+
+/* Div Izquierdo */
+.menu {
+
+    display: block;
+    margin: 50px 20px 20px 40px;
+
+    width: 120px;
+    height: max-content;
+}
+
+.logo {
+    margin-top: 1em;
+    width: 120px;
+    height: 48px;
+    display: flex;
+
+
+}
+
+.logoAlura {
+    width: 32px;
+    height: 40px;
+    /* margin: auto; */
+}
+
+
+/* Div Central */
+
+.central {
+    text-align: center;
+    border-color: aqua;
+    display: inline-block;
+    width: 620px;
+    margin-top: 50px;
+    margin-right: 20px;
+    height: 944px;
+}
+
+form {
+    margin: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.textoEntrada {
+    display: block;
+    background: none;
+    padding: 8px;
+    margin: 10px;
+    width: 680px;
+    height: 781px;
+    border-radius: 10px;
+    border: none;
+    font-size: 2em;
+    color: #0a3871;
+    line-height: 150%;
+    text-align: left top;
+}
+.textoEntrada::placeholder{
+    font-size: 1em;
+    color: darkblue;
+   vertical-align: top;
+}
+
+
+
+
+.botones {
+
+
+    width: 680px;
+    height: 67;
+}
+
+.botones_central{
+    background-color: white;
+    width: 328px;
+    height: 67px;
+    margin: 10px 0;
+    border-radius: 24px;
+    
+    font-size: 2em;
+}
+
+.botones_central:hover {
+    background-color: darkblue;
+    color: white;
+    transition: 1s;
+}
+
+
+.final {
+    background-color: white;
+    text-align: center;
+    display: inline;
+    width: 400px;
+    margin-left: 100px;
+    margin-top: 50px;
+    height: 944px;
+    border-radius: 32px;
+    border-color: blue;
+    box-shadow: rgb(209, 209, 209) 1em 1em 1em;
+     /* display: none; */
+}
+
+.textoFinal {
+    display: block;
+    border: none;
+    padding: 8px;
+    margin: 10px;
+    width: 336px;
+    height: 781px;
+    font-size: 2em;
+    color: #0a3871;
+    line-height: 150%;
+    text-align: left;
+}
+.botones_copiar{
+    background-color: white;
+    width: 328px;
+    height: 67px;
+    margin: 10px 0;
+    border-radius: 24px;
+    font-size: 2em;
+}
+
+.botones_copiar:hover{
+    background-color: darkblue;
+    color: white;
+    transition: 1s;
+}
