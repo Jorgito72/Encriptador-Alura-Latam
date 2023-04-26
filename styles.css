@@ -6,9 +6,9 @@ body {
 }
 
 .general {
-    background-color: rgb(231, 241, 250);
-    margin: 64px auto 50px;
-    width: 1440px;
+    background-color:white;
+    margin: 64px 50px 50px 50px;
+    width: 1400px;
     height: 1024px;
     display: flex;
     /* align-items: start */
@@ -19,19 +19,28 @@ body {
 
     display: block;
     margin: 50px 20px 20px 40px;
-
+    text-align: center;
     width: 120px;
     height: max-content;
 }
 
 .logo {
-    margin-top: 1em;
-    width: 120px;
-    height: 48px;
-    display: flex;
-
-
+    margin-top: 1em auto;
+    width: 110px;
+    height: auto;
+    display: inline;
+    text-align: center;
 }
+
+.menu_1 {
+    display: inline;
+    margin-top: 1em;
+    width: 110px;
+    height: auto;
+    display: flex;
+    background: white;
+}
+
 
 .logoAlura {
     width: 32px;
@@ -43,8 +52,7 @@ body {
 /* Div Central */
 
 .central {
-    text-align: center;
-    border-color: aqua;
+    text-align: center;border-color: aqua;
     display: inline-block;
     width: 620px;
     margin-top: 50px;
@@ -66,7 +74,7 @@ label {
 .textoEntrada {
     display: block;
     background: none;
-    padding: 8px;
+    padding: 1px;
     margin: 10px;
     width: 680px;
     height: 781px;
@@ -76,30 +84,39 @@ label {
     color: #0a3871;
     line-height: 150%;
     text-align: left top;
+    resize: none;
 }
-.textoEntrada::placeholder{
-    font-size: 1em;
+
+.textoEntrada::placeholder {
+    font-size: 1.5em;
     color: darkblue;
-   vertical-align: top;
+    vertical-align: top;
+    margin: 2em;}
+
+form {
+    text-align: left;
 }
 
-
+form img {
+    padding-left: 10px;
+}
 
 
 .botones {
 
-
+    text-align: end;
     width: 680px;
     height: 67;
+    margin: auto;
 }
 
-.botones_central{
+.botones_central {
     background-color: white;
     width: 328px;
     height: 67px;
     margin: 10px 0;
     border-radius: 24px;
-    
+
     font-size: 2em;
 }
 
@@ -114,6 +131,7 @@ label {
     background-color: white;
     text-align: center;
     display: inline;
+    justify-content: space-between;
     width: 400px;
     margin-left: 100px;
     margin-top: 50px;
@@ -121,32 +139,52 @@ label {
     border-radius: 32px;
     border-color: blue;
     box-shadow: rgb(209, 209, 209) 1em 1em 1em;
-     /* display: none; */
+    /* display: none; */
 }
 
 .textoFinal {
     display: block;
     border: none;
-    padding: 8px;
+    padding: 28px;
     margin: 10px;
     width: 336px;
     height: 781px;
     font-size: 2em;
     color: #0a3871;
     line-height: 150%;
-    text-align: left;
+    text-align: right;
+    /* display: none; */
 }
-.botones_copiar{
+
+.mensaje_final {
+    display: none;
+}
+
+.placehold_final {
+    padding-top: 150px;
+    /* display: none; */
+}
+
+.botones_copiar {
     background-color: white;
     width: 328px;
     height: 67px;
     margin: 10px 0;
     border-radius: 24px;
     font-size: 2em;
+    display: inline;
+    /* display: none; */
 }
 
-.botones_copiar:hover{
+.botones_copiar:hover {
     background-color: darkblue;
     color: white;
     transition: 1s;
+}
+
+footer {
+    font-size: 1.5em;
+    color: rgb(161, 160, 160);
+    padding: 0 5em 1em;
+    display: block;
 }
