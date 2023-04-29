@@ -6,17 +6,18 @@ body {
 }
 
 .general {
-    background-color:white;
-    margin: 64px 50px 50px 50px;
-    width: 1400px;
-    height: 1024px;
+    background-color: white;
+    margin: 64px auto;
+    width: 1440px;
+    height: 100%;
     display: flex;
-    /* align-items: start */
+
 }
 
-h1{
+h1 {
     text-align: center;
-    font-size: 50px;margin-top: 20px;
+    font-size: 50px;
+    margin-top: 20px;
     color: #0a3871;
 }
 
@@ -27,7 +28,7 @@ h1{
     margin: 50px 20px 20px 40px;
     text-align: center;
     width: 120px;
-    height: max-content;
+    height: 900 px;
 }
 
 .logo {
@@ -40,30 +41,37 @@ h1{
 
 .menu_1 {
     display: inline;
-    margin-top: 1em;
+    margin: 1em auto;
     width: 110px;
     height: auto;
     display: flex;
     background: white;
 }
 
+.menu_2 img {
+    margin: 2em auto;
+    width: 120px;
+    height: 200px;
+}
+
 
 .logoAlura {
     width: 32px;
     height: 40px;
-    /* margin: auto; */
+    margin: 0 auto;
 }
 
 
 /* Div Central */
 
 .central {
-    text-align: center;border-color: aqua;
+    text-align: center;
+    border-color: aqua;
     display: inline-block;
     width: 620px;
     margin-top: 50px;
     margin-right: 20px;
-    height: 944px;
+    height: 850px;
 }
 
 form {
@@ -91,13 +99,15 @@ label {
     line-height: 150%;
     text-align: left top;
     resize: none;
+    text-transform: lowercase;
 }
 
 .textoEntrada::placeholder {
     font-size: 1em;
     color: darkblue;
     vertical-align: top;
-    margin: 2em;}
+    margin: 2em;
+}
 
 form {
     text-align: left;
@@ -113,7 +123,7 @@ form img {
     text-align: end;
     width: 680px;
     height: 67;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .botones_central {
@@ -122,7 +132,6 @@ form img {
     height: 67px;
     margin: 10px 0;
     border-radius: 24px;
-
     font-size: 2em;
 }
 
@@ -151,7 +160,7 @@ form img {
 .textoFinal {
     display: block;
     border: none;
-    border-radius: 25px;
+    border-radius: 32px;
     padding: 28px;
     margin: 10px;
     width: 320px;
@@ -195,4 +204,38 @@ footer {
     color: rgb(161, 160, 160);
     padding: 0 5em 1em;
     display: block;
+}
+
+/* media queries */
+@media screen and (max-width: 825px) {
+    .general {
+        margin: 0 0;
+        width: 768px;
+        display: inline-block;
+    }
+
+    .menu_1{
+        display: inline-block;
+    }
+    .menu_2 {
+        display: none;
+    }
+
+    .textoEntrada {
+        width: 750px;
+        height: 600px;
+    }
+
+    .botones_central {
+        display: block;
+    }
+
+    .textoFinal {
+
+        width: 680px;
+    }
+
+    .muñeco {
+        display: none;
+    }
 }

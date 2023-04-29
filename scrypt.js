@@ -15,6 +15,8 @@ let textoDesScrypt='';
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
 botonCopiar.onclick = copiar;
+
+
 //funciones
 
 function encriptar() {
